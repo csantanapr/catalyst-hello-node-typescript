@@ -6,13 +6,13 @@ replicaCount: 1
 
 host: myhost
 namespace: dev
-cluster_name: cluster
-region: us-south
+cluster_name: default-cluster
+region: us-east
 domainRoot: containers.appdomain.cloud
 
 image:
-  repository: replace
-  tag: replace
+  repository: us.icr.io/catalyst-demos/template-node-typescript
+  tag: 1.0.0
   pullPolicy: IfNotPresent
   port: 3000
 
