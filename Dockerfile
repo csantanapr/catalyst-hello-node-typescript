@@ -6,8 +6,8 @@ COPY package.json /home/node
 
 WORKDIR /home/node
 
-ENV HOME /root
-ENV USER /root
+ENV HOME /home/node
+
 RUN npm install --production
 
 ENV HOST=0.0.0.0 PORT=3000
